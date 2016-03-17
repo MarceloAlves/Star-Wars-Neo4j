@@ -1,0 +1,184 @@
+CREATE (ANewHope:StarWars {title: 'A New Hope', episode:4}),
+  (LukeSkywalker:Person {name:'Luke Skywalker', birth_year:'19BBY', gender:'Male'}),
+  (C3PO:Person {name:'C-3PO', birth_year:'112BBY', gender:'n/a'}),
+  (R2D2:Person {name:'R2-D2', birth_year:'33BBY', gender:'n/a'}),
+  (DarthVader:Person {name:'Darth Vader', birth_year:'41.9BBY', gender:'Male'}),
+  (LeiaOrgana:Person {name:'Leia Organa', birth_year:'19BBY', gender:'Female'}),
+  (OwenLars:Person {name:'Owen Lars', birth_year:'52BBY', gender:'Male'}),
+  (BeruWhitesunLars:Person {name:'Beru Whitesun Lars', birth_year:'47BBY', gender:'Female'}),
+  (R5D4:Person {name:'R5-D4', birth_year:'Unknown', gender:'n/a'}),
+  (BiggsDarklighter:Person {name:'Biggs Darklighter', birth_year:'24BBY', gender:'Male'}),
+  (ObiWanKenobi:Person {name:'Obi-Wan Kenobi', birth_year:'57BBY', gender:'Male'}),
+  (WilhuffTarkin:Person {name:'Wilhuff Tarkin', birth_year:'64BBY', gender:'Male'}),
+  (Chewbacca:Person {name:'Chewbacca', birth_year:'200BBY', gender:'Male'}),
+  (HanSolo:Person {name:'Han Solo', birth_year:'29BBY', gender:'Male'}),
+  (Greedo:Person {name:'Greedo', birth_year:'44BBY', gender:'Male'}),
+  (JabbaDesilijicTiure:Person {name:'Jabba Desilijic Tiure', birth_year:'600BBY', gender:'Hermaphrodite'}),
+  (WedgeAntilles:Person {name:'Wedge Antilles', birth_year:'21BBY', gender:'Male'}),
+  (JekTonoPorkins:Person {name:'Jek Tono Porkins', birth_year:'Unknown', gender:'Male'}),
+  (RaymusAntilles:Person {name:'Raymus Antilles', birth_year:'Unknown', gender:'Male'})
+
+CREATE
+  (LukeSkywalker)-[:CHARACTER]->(ANewHope),
+  (C3PO)-[:CHARACTER]->(ANewHope),
+  (R2D2)-[:CHARACTER]->(ANewHope),
+  (DarthVader)-[:CHARACTER]->(ANewHope),
+  (LeiaOrgana)-[:CHARACTER]->(ANewHope),
+  (OwenLars)-[:CHARACTER]->(ANewHope),
+  (BeruWhitesunLars)-[:CHARACTER]->(ANewHope),
+  (R5D4)-[:CHARACTER]->(ANewHope),
+  (BiggsDarklighter)-[:CHARACTER]->(ANewHope),
+  (ObiWanKenobi)-[:CHARACTER]->(ANewHope),
+  (WilhuffTarkin)-[:CHARACTER]->(ANewHope),
+  (Chewbacca)-[:CHARACTER]->(ANewHope),
+  (HanSolo)-[:CHARACTER]->(ANewHope),
+  (Greedo)-[:CHARACTER]->(ANewHope),
+  (JabbaDesilijicTiure)-[:CHARACTER]->(ANewHope),
+  (WedgeAntilles)-[:CHARACTER]->(ANewHope),
+  (JekTonoPorkins)-[:CHARACTER]->(ANewHope),
+  (RaymusAntilles)-[:CHARACTER]->(ANewHope)
+
+CREATE (TheEmpireStrikesBack:StarWars {title:'The Empire Strikes Back', episode:5}),
+  (Yoda:Person {name:'Yoda', birth_year:'896BBY', gender:'Male'}),
+  (Palpatine:Person {name:'Palpatine', birth_year:'82BBY', gender:'Male'}),
+  (BobaFett:Person {name:'Boba Fett', birth_year:'31.5BBY', gender:'Male'}),
+  (IG88:Person {name:'IG-88', birth_year:'15BBY', gender:'n/a'}),
+  (Bossk:Person {name:'Bossk', birth_year:'53BBY', gender:'Male'}),
+  (LandoCalrissian:Person {name:'Lando Calrissian', birth_year:'31BBY', gender:'Male'}),
+  (Lobot:Person {name:'Lobot', birth_year:'37BBY', gender:'Male'})
+CREATE
+  (LukeSkywalker)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (C3PO)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (R2D2)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (DarthVader)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (LeiaOrgana)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (ObiWanKenobi)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (Chewbacca)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (HanSolo)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (WedgeAntilles)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (Yoda)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (Palpatine)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (BobaFett)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (IG88)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (Bossk)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (LandoCalrissian)-[:CHARACTER]->(TheEmpireStrikesBack),
+  (Lobot)-[:CHARACTER]->(TheEmpireStrikesBack)
+
+CREATE (ReturnoftheJedi:StarWars {title:'Return of the Jedi', episode:6}),
+  (BibFortuna:Person {name:'Bib Fortuna', birth_year:'Unknown', gender:'Male'}),
+  (Ackbar:Person {name:'Ackbar', birth_year:'41BBY', gender:'Male'}),
+  (MonMothma:Person {name:'Mon Mothma', birth_year:'48BBY', gender:'Female'}),
+  (ArvelCrynyd:Person {name:'Arvel Crynyd', birth_year:'Unknown', gender:'Male'}),
+  (WicketSystriWarrick:Person {name:'Wicket Systri Warrick', birth_year:'8BBY', gender:'Male'}),
+  (NienNunb:Person {name:'Nien Nunb',birth_year:'Unknown', gender:'Male'})
+
+CREATE
+  (LukeSkywalker)-[:CHARACTER]->(ReturnoftheJedi),
+  (C3PO)-[:CHARACTER]->(ReturnoftheJedi),
+  (R2D2)-[:CHARACTER]->(ReturnoftheJedi),
+  (DarthVader)-[:CHARACTER]->(ReturnoftheJedi),
+  (LeiaOrgana)-[:CHARACTER]->(ReturnoftheJedi),
+  (ObiWanKenobi)-[:CHARACTER]->(ReturnoftheJedi),
+  (Chewbacca)-[:CHARACTER]->(ReturnoftheJedi),
+  (HanSolo)-[:CHARACTER]->(ReturnoftheJedi),
+  (BibFortuna)-[:CHARACTER]->(ReturnoftheJedi),
+  (JabbaDesilijicTiure)-[:CHARACTER]->(ReturnoftheJedi),
+  (WedgeAntilles)-[:CHARACTER]->(ReturnoftheJedi),
+  (Yoda)-[:CHARACTER]->(ReturnoftheJedi),
+  (Palpatine)-[:CHARACTER]->(ReturnoftheJedi),
+  (BobaFett)-[:CHARACTER]->(ReturnoftheJedi),
+  (LandoCalrissian)-[:CHARACTER]->(ReturnoftheJedi),
+  (Ackbar)-[:CHARACTER]->(ReturnoftheJedi),
+  (MonMothma)-[:CHARACTER]->(ReturnoftheJedi),
+  (ArvelCrynyd)-[:CHARACTER]->(ReturnoftheJedi),
+  (WicketSystriWarrick)-[:CHARACTER]->(ReturnoftheJedi),
+  (NienNunb)-[:CHARACTER]->(ReturnoftheJedi)
+
+CREATE (Tatooine:Planet {name:'Tatooine'})
+
+CREATE
+  (LukeSkywalker)-[:HOMEWORLD]->(Tatooine),
+  (C3PO)-[:HOMEWORLD]->(Tatooine),
+  (DarthVader)-[:HOMEWORLD]->(Tatooine),
+  (OwenLars)-[:HOMEWORLD]->(Tatooine),
+  (BeruWhitesunLars)-[:HOMEWORLD]->(Tatooine),
+  (R5D4)-[:HOMEWORLD]->(Tatooine),
+  (BiggsDarklighter)-[:HOMEWORLD]->(Tatooine)
+
+CREATE (Alderaan:Planet {name:'Alderaan'})
+
+CREATE
+  (LeiaOrgana)-[:HOMEWORLD]->(Alderaan),
+  (RaymusAntilles)-[:HOMEWORLD]->(Alderaan)
+
+CREATE (Bespin:Planet {name:'Bespin'})
+
+CREATE (Lobot)-[:HOMEWORLD]->(Bespin)
+
+CREATE (Endor:Planet {name:'Endor'})
+
+CREATE (WicketSystriWarrick)-[:HOMEWORLD]->(Endor)
+
+CREATE (Naboo:Planet {name:'Naboo'})
+
+CREATE
+  (R2D2)-[:HOMEWORLD]->(Naboo),
+  (Palpatine)-[:HOMEWORLD]->(Naboo)
+
+CREATE (Stewjon:Planet {name:'Stewjon'})
+
+CREATE (ObiWanKenobi)-[:HOMEWORLD]->(Stewjon)
+
+CREATE (Kashyyyk:Planet {name:'Kashyyyk'})
+
+CREATE (Chewbacca)-[:HOMEWORLD]->(Kashyyyk)
+
+CREATE (Corellia:Planet {name:'Corellia'})
+
+CREATE
+  (HanSolo)-[:HOMEWORLD]->(Corellia),
+  (WedgeAntilles)-[:HOMEWORLD]->(Corellia)
+
+CREATE (Kamino:Planet {name:'Kamino'})
+
+CREATE (BobaFett)-[:HOMEWORLD]->(Kamino)
+
+CREATE (Trandosha:Planet {name:'Trandosha'})
+
+CREATE (Bossk)-[:HOMEWORLD]->(Trandosha)
+
+CREATE (Socorro:Planet {name:'Socorro'})
+
+CREATE (LandoCalrissian)-[:HOMEWORLD]->(Socorro)
+
+CREATE (BestineIV:Planet {name:'Bestine IV'})
+
+CREATE (JekTonoPorkins)-[:HOMEWORLD]->(BestineIV)
+
+CREATE (NalHutta:Planet {name:'Nal Hutta'})
+
+CREATE (JabbaDesilijicTiure)-[:HOMEWORLD]->(NalHutta)
+
+CREATE (Rodia:Planet {name:'Rodia'})
+
+CREATE (Greedo)-[:HOMEWORLD]->(Rodia)
+
+CREATE (Eriadu:Planet {name:'Eriadu'})
+
+CREATE (WilhuffTarkin)-[:HOMEWORLD]->(Eriadu)
+
+CREATE (Sullust:Planet {name:'Sullust'})
+
+CREATE (NienNunb)-[:HOMEWORLD]->(Sullust)
+
+CREATE (Chandrila:Planet {name:'Chandrila'})
+
+CREATE (MonMothma)-[:HOMEWORLD]->(Chandrila)
+
+CREATE (MonCala:Planet {name:'Mon Cala'})
+
+CREATE (Ackbar)-[:HOMEWORLD]->(MonCala)
+
+CREATE (Ryloth:Planet {name:'Ryloth'})
+
+CREATE (BibFortuna)-[:HOMEWORLD]->(Ryloth)
